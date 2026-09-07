@@ -1,0 +1,74 @@
+# ═══ Credenciales — NUNCA subir ═══
+.env
+.env.*
+!.env.example
+config.local.js
+credentials.json
+secrets.json
+*.pem
+*.key
+
+# Archivos con credenciales reales de la app
+medcollab_secure.local.html
+medcollab_local.html
+*_local.html
+
+# ═══ Backups de base de datos ═══
+*.dump
+*.backup
+backup_*.sql
+supabase_data_*.sql
+
+# ═══ Dependencias ═══
+node_modules/
+.pnpm-store/
+package-lock.json.bak
+
+# ═══ Build outputs ═══
+dist/
+build/
+.next/
+.nuxt/
+out/
+
+# ═══ Editor / IDE ═══
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ═══ Sistema operativo ═══
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ═══ Logs y temporales ═══
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# ═══ Coverage / testing ═══
+coverage/
+.nyc_output/
+*.lcov
+
+# ═══ Netlify local ═══
+.netlify/
+
+# ═══ Supabase local (si algún día usas supabase CLI) ═══
+supabase/.branches/
+supabase/.temp/
+supabase/functions/*/deno.lock
